@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --red: #EA2027;
+    --blue: #333586;
+    --darkBlue: #192a56;
+    --lightblue: #dde1ebda;
+    --grey: #e5ebf0;
+    --pink: #f5d9d9;
+    --orange: #ff793f;
+    --green: #079992;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    background-color: white;
+    box-shadow: 0 8px 6px -8px black;
+}
+
+nav button a {
+    color: white !important;
+}
+
+#home {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.863), rgba(0, 0, 0, 0.37)), url('https://img.freepik.com/premium-photo/hands-old-man-woman-hand-wood-table-sun-lightxa_71455-1358.jpg?w=826');
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    background-repeat: no-repeat;
+}
+
+#home>div {
+    position: relative;
+    animation-name: home;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+#home p {
+    font-weight: 600;
+    font-size: 27px;
+    color: white;
+    padding: 7px 0;
+}
+
+#home h1 {
+    font-weight: 300;
+    color: white;
+    opacity: 0.9;
+    padding: 7px 0;
+}
+
+#home h6 {
+    font-weight: 300;
+    color: white;
+    opacity: 0.8;
+    padding: 15px 0;
+}
+
+.btn {
+    font-weight: 800;
+    margin: 5px;
+}
+
+@keyframes home {
+    from {
+        top: 150px;
+    }
+
+    to {
+        top: 0px;
+    }
+}
+
+/* BENEFITS SECTION STYLE*/
+
+#benefits {
+    text-align: center;
+}
+
+#benefits h1,
+#benefits h4 {
+    color: var(--darkBlue);
+}
+
+#benefits #box div {
+    border-radius: 15px;
+    outline: 10px solid #73a39fcc;
+    text-align: left;
+
+}
+
+#benefits #box h6 {
+    margin-top: 15px;
+    opacity: 0.7;
+    font-weight: 400;
+}
+
+#benefits #box .readMore {
+    color: blue;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* SERVICES SECTION STYLE*/
+#services {
+    background-color: var(--lightblue);
+}
+
+#services h1 {
+    text-align: center;
+    font-weight: 700;
+    color: var(--darkBlue);
+    padding-bottom: 10px;
+}
+
+#services h4 {
+    text-align: center;
+    font-weight: 400;
+    color: var(--darkBlue);
+    padding-bottom: 30px;
+}
+
+#services .card {
+    box-shadow: 0 8px 13px -8px black;
+
+}
+
+/* REVIEWS SECTION STYLE*/
+#reviews h1 {
+    text-align: center;
+    font-weight: 700;
+    color: var(--darkBlue);
+    padding-bottom: 10px;
+}
+
+#reviews h4 {
+    text-align: center;
+    font-weight: 400;
+    color: var(--darkBlue);
+    padding-bottom: 30px;
+}
+
+#reviews .card {
+    border-radius: 13px;
+    box-shadow: 0 8px 13px -8px black;
+}
+
+#reviews .card-header {
+    background-color: var(--darkBlue);
+    border-radius: 13px 13px 0 0;
+}
+
+#reviews .card i {
+    color: white;
+    font-size: 42px !important;
+    padding-right: 14px;
+}
+
+#reviews .card-header h6,
+#reviews .card-header p {
+    color: white;
+    margin-bottom: 4;
+}
+
+
+#reviews .card p {
+    font-size: 14px;
+}
+
+/*PACKAGING  SECTION STYLE*/
+#packaging {
+    background-color: var(--pink);
+}
+
+#packaging .card {
+    border-radius: 15px;
+    box-shadow: 0 8px 13px -8px black;
+}
+
+#packaging .card img {
+    border-radius: 15px 15px 0 0;
+}
+
+#packaging .card-title {
+    font-size: 16px;
+}
+
+#packaging .card-title b {
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 6px;
+}
+
+#packaging .card-text {
+    color: blue;
+    font-size: 12px;
+}
+
+#packaging .card-body h6 {
+    opacity: 0.6;
+    font-weight: 500;
+}
+
+#packaging .card-body ul li {
+    list-style: none;
+    margin: 15px 0;
+}
+
+#packaging .card-body ul li::before {
+    content: '';
+    display: inline-block;
+    background-size: 18px;
+    background-position: center;
+    margin-right: 8px;
+    background-repeat: no-repeat;
+    height: 15px;
+    width: 15px;
+    background-image: url('images/icon.png');
+}
+
+/*ENQUIRE SECTION STYLE*/
+
+#enquire h1 {
+    text-align: center;
+    font-weight: 700;
+    color: var(--darkBlue);
+    padding-bottom: 10px;
+
+}
+
+#enquire form {
+    background-color: var(--green);
+    border-radius: 8px;
+    box-shadow: 0 8px 13px -8px black;
+    padding: 40px;
+}
+
+#enquire form label {
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 20px 0 3px 2px;
+}
+
+#enquire input:focus,
+#enquire textarea:focus {
+    background-color: white;
+    box-shadow: none;
+    outline: none;
+}
+
+
+#enquire form button {
+    background-color: rgb(253, 64, 64) !important;
+    border: none;
+    box-shadow: 0 8px 7px -9px black;
+}
+
+/* CONTACT SECTION STYLE*/
+#contact {
+    background-color: var(--grey);
+}
+
+#contact a {
+    text-decoration: none;
+    color: black;
+}
+
+#contact i {
+    color: var(--red);
+    padding: 8px;
+
+}
+
+#contact #social-media-profiles {
+    padding: 15px 0;
+}
+
+#contact #social-media-profiles i {
+    font-size: 30px;
+    color: var(--blue);
+    border-radius: 50%;
+    padding: 13px 14px;
+
+    transition: 0.2s;
+}
+
+#contact #social-media-profiles i:hover {
+    transform: scale(1.2);
+}
